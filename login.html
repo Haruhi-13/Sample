@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>LMS FORM</title>
+  <link rel="stylesheet" href="style.css">
+  <script src="script.js" defer></script>
+</head>
+
+<body>
+  <div class="container">
+
+    <div class="title"> LMS Registration Form</div>
+
+    <form class="registerForm" action="#">
+      <div class="user-details">
+
+        <div class="user-input">
+          <label class="lbl">First Name:</label>
+          <input type="text" class="fname" placeholder="Enter your first name" required>
+        </div>
+
+        <div class="user-input">
+          <label class="lbl">Middle Name:</label>
+          <input type="text" class="mname" placeholder="Enter your middle name">
+        </div>
+
+        <div class="user-input">
+          <label class="lbl">Last Name:</label>
+          <input type="text" class="lname" placeholder="Enter your last name" required>
+        </div>
+
+        <div class="user-input">
+          <label class="lbl">Email:</label>
+          <input type="email" class="email" pattern=".+@gmail.com" placeholder="Enter your email" required>
+        </div>
+
+        <div class="user-input">
+          <label class="lbl">Phone Number:</label>
+          <input type="number" class="phoneNum" inputmode="numeric" placeholder="+63(123) 456-7890" maxlength="11"
+            required>
+        </div>
+
+        <div class="user-input">
+          <label class="lbl">Loan Amount:</label>
+          <input type="number" class="loan-amount" inputmode="numeric" placeholder="" min="1" max="10000">
+        </div>
+
+        <div class="user-input">
+          <label class="lbl">Loan Term:</label>
+          <select name="loanTerm" class="loanTerm">
+            <option value="12-months">12 months</option>
+            <option value="24-months">24 months</option>
+            <option value="36-months">36 months</option>
+          </select>
+        </div>
+
+        <div class="user-input">
+          <label class="lbl">Employment Status:</label>
+          <select name="employStats" class="employStats">
+            <option value="employed">Employed</option>
+            <option value="unemployed">Unemployed</option>
+            <option value="self-employed">Self-Employed</option>
+          </select>
+        </div>
+
+        <div class="user-input">
+          <label class="lbl">Monthly Income:</label>
+          <input type="number" class="monInc" inputmode="numeric" placeholder="Enter your monthly icome">
+        </div>
+
+        <div class="user-input">
+          <label class="lbl">Purpose of Loan:</label>
+          <textarea class="purpose-of-loan"></textarea>
+        </div>
+
+        <div class="user-input">
+          <label class="lbl">Date of Birth:</label>
+          <input type="date" class="date-of-birth">
+        </div>
+
+        <div class="user-input">
+          <label class="lbl">Address:</label>
+          <textarea class="address"></textarea>
+        </div>
+
+        <div class="user-input">
+          <label class="lbl">Marital Status:</label>
+          <select name="marital-stats" class="marital-stats">
+            <option value="single">Single</option>
+            <option value="married">Married</option>
+            <option value="divorced">Divored</option>
+            <option value="windowed">Widowed</option>
+          </select>
+        </div>
+      </div>
+      <div class="button">
+        <input type="submit" value="Submit">
+      </div>
+    </form>
+  </div>
+</body>
+
+</html>

@@ -1,0 +1,148 @@
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family:Arial, Helvetica, sans-serif;
+}
+input::-webkit-outer-spin-button,
+input::-webkit-inner-spin-button {
+  -webkit-appearance: none;
+  margin: 0;
+}
+
+textarea{
+  resize: none;
+  width: 100% ;;
+  white-space: normal;
+    text-align: justify;
+    outline: none;
+  border-radius: 5px;
+  border: 1px solid;
+  border-color: #ccc;
+}
+.purpose,
+.purpose-of-loan {
+  vertical-align: middle
+}
+
+.address {
+  vertical-align: middle
+}
+
+body{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background:linear-gradient(140deg, #00FFFF, #9b599b);
+  padding: 10px;
+}
+
+.container{
+  background-color: #fff;
+  max-width: 900px;
+  height: 100%;
+  width: 100%;
+  padding: 25px 50px;
+  border-radius: 10px;
+}
+
+.container .title{
+  font-size: 25px;
+  font-weight: 700;
+  position: relative;
+}
+
+.container .title::before{
+  content:'';
+  position: absolute;
+  left: 0;
+  bottom: 0;
+  height: 3px;
+  width: 30px;
+  background:linear-gradient(140deg, #00FFFF, #9b599b);
+  
+}
+
+.container form .user-details{
+  display:flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  margin-bottom: 15px;
+}
+
+form .user-details .user-input{
+  margin: 20px 0 12px 0;
+  margin-bottom: 12px;
+  width: calc(100% / 2 -20px);
+}
+.user-details .user-input{
+  height: 45px;
+  width: 50%;
+}
+
+.user-details .user-input .lbl{
+  font-weight:normal;
+  margin-bottom: 5px;
+  display: block;
+}
+
+.user-details .user-input input{
+  height: 35px;
+  width: 75%;
+  outline: none;
+  border-radius: 5px;
+  border: 1px solid;
+  border-color: #ccc;
+  padding-left: 5px;
+  font-size: 15px;
+  border-bottom-width: 2px;
+  transition: all 0.15s;
+ 
+}
+
+.user-details .user-input input:focus,
+.user-details .user-input input:valid{
+  border-color: #9b599b;
+}
+form .button{
+  height: 50px;
+  margin: 45px 0;
+  margin-top: 1px;
+  margin-bottom: 25px;
+}
+form .button input{
+  height: 100%;
+  width: 100%;
+  outline: none;
+  color: white;
+  background:linear-gradient(140deg, #00FFFF, #9b599b);
+  border-style: none;
+  border-radius: 15px;  
+  transition: opacity 0.15s;
+  font-weight: bold;
+  font-size: 20px;
+  letter-spacing: 1px;
+}
+
+form .button input:hover{
+  opacity: 0.5;
+}
+
+form .button input:active{
+  background:linear-gradient(140deg, #038585, #750175);
+}
+
+@media (max-width:584px){
+  .container{
+    max-width: 100%;
+  }
+  form .user-details .user-input{
+    margin-bottom: 12px;
+    width: 100%;
+  }
+  
+}
+
+
+
+
